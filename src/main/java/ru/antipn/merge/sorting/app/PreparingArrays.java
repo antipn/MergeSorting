@@ -2,6 +2,7 @@ package ru.antipn.merge.sorting.app;
 
 import org.springframework.stereotype.Service;
 import ru.antipn.merge.sorting.app.exception.ErrorRowCatcher;
+import ru.antipn.merge.sorting.app.exception.SpaceFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,11 +58,13 @@ public class PreparingArrays {
                     for (int j = 0; j < arrayFromFile.size(); j++) {
                         String[] split = arrayFromFile.get(j).split("");
                         for (String ch : split) {
+                            if (ch.equals(" ")) {
+                                throw new SpaceFoundException("Spaces are prohibited for using");
+                            }
                             result.add(ch);
                         }
                     }
                 }
-                System.out.println(result);
                 return result;
             }
         }

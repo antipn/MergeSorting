@@ -1,6 +1,5 @@
 package ru.antipn.merge.sorting.app;
 
-
 import ru.antipn.merge.sorting.app.exception.ErrorRowCatcher;
 
 import java.nio.file.Files;

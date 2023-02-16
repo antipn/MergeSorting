@@ -9,7 +9,6 @@ import java.util.List;
 public class FileSystemWriter {
     private String filePath;
 
-
     public FileSystemWriter(String filePath) {
         this.filePath = filePath;
     }
