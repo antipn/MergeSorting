@@ -1,0 +1,1 @@
+MergeSorting\build\libs>java -jar MergeSorting-1.0.jar -a -s out.txt 1.txt 2.txt 3.txt
