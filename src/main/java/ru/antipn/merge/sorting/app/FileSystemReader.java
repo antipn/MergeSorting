@@ -16,7 +16,8 @@ public class FileSystemReader {
     }
 
     public List<String> getLines() throws Exception {
-        Path pathFile = Paths.get("src//main//resources//" + filePath);
+        //Path pathFile = Paths.get("src//main//resources//" + filePath);
+        Path pathFile = Paths.get(filePath);
         boolean exists = Files.exists(pathFile);
         if (exists) {
             try {

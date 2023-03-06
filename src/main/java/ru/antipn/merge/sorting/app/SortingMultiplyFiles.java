@@ -45,10 +45,8 @@ public class SortingMultiplyFiles {
             array[i] = (String) input.get(i);
         }
         Sorting.mergeSortString(array, size, preparingArrays.getParsingArgs()[0]);
-
         FileSystemWriter outputFile = new FileSystemWriter(preparingArrays.getParsingArgs()[2]);
         outputFile.setLines(Arrays.asList(array));
-
     }
 
 }
